@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Logo Social Media App</string>
+    <string name="app_name">Logo</string>
+    <string name="post_action">Post action</string>
+    <string name="top_bar_action">TopBar action</string>
+    <string name="like">Like</string>
+    <string name="share">Share</string>
+    <string name="comment">Comment</string>
+
 </resources>

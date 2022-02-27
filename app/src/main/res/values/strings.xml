@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Logo</string>
     <string name="post_action">Post action</string>
+    <string name="user_image">User Image</string>
     <string name="top_bar_action">TopBar action</string>
+    <string name="bottom_navigation_bar_action">BottomNavigationBar action</string>
     <string name="like">Like</string>
     <string name="share">Share</string>
     <string name="comment">Comment</string>
+    <string name="share_your_food_experiences">Share your food experiences</string>
 
 </resources>

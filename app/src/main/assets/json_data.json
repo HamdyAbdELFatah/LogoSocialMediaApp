@@ -1,0 +1,65 @@
+{
+  "user_posts": [
+    {
+      "name": "Chicken Chester",
+      "image": "R.drawable.resu",
+      "date": "2 days ago",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet",
+      "image_content": "R.drawable.resu",
+      "like": "32K",
+      "comment": "597",
+      "share": "12.3K",
+      "badge": "R.drawable.cook",
+      "comment_details": {
+        "name": "Jaxson Schleifer",
+        "image": "R.drawable.resu",
+        "comment": "Lorem ipsum",
+        "like": 2,
+        "date": "1h"
+      },
+      "post_details": {
+        "title": "Jaxson Schleifer",
+        "image": "R.drawable.resu",
+        "sub_title": "Lorem ipsum"
+      }
+    },
+    {
+      "name": "Rayna Rosser",
+      "image": "R.drawable.resu",
+      "date": "2 days ago",
+      "title": "Chicken Chester specializes in delicious food featuring fresh ingredients and masterful preparation",
+      "like": "32K",
+      "comment": "597",
+      "share": "12.3K",
+      "job": "Verified Buyer",
+      "badge": "R.drawable.official",
+      "post_details": {
+        "title": "Jaxson Schleifer",
+        "image": "R.drawable.resu",
+        "sub_title": "Lorem ipsum"
+      }
+    },
+    {
+      "name": "Rayna Rosser",
+      "image": "R.drawable.resu",
+      "date": "2 days ago",
+      "title": "Chicken Chester specializes in delicious food featuring fresh ingredients and masterful preparation",
+      "like": "32K",
+      "comment": "597",
+      "share": "12.3K",
+      "job": "Verified Buyer",
+      "share_from": "Chicken Chester",
+      "post_details": {
+        "name": "Chicken Chester",
+        "image_user": "R.drawable.resu",
+        "badge": "R.drawable.official",
+        "image_content": "R.drawable.resu",
+        "date": "2 days ago",
+        "post_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet",
+        "title": "Jaxson Schleifer",
+        "image": "R.drawable.resu",
+        "sub_title": "Lorem ipsum"
+      }
+    }
+  ]
+}

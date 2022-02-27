@@ -1,0 +1,19 @@
+package com.hamdy.logo.screens
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import com.hamdy.logo.R
+import com.hamdy.logo.components.ActionIcon
+
+
+@Composable
+fun GroupScreen() {
+
+    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        ActionIcon(iconId = R.drawable.ic_group)
+    }
+
+}

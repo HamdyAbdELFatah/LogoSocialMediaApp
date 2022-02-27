@@ -2,63 +2,70 @@
   "user_posts": [
     {
       "name": "Chicken Chester",
-      "image": "R.drawable.resu",
+      "image": "@drawable/chicken_chester_image",
       "date": "2 days ago",
       "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet",
-      "image_content": "R.drawable.resu",
+      "image_content": "@drawable/chicken_chester_meal",
       "like": "32K",
       "comment": "597",
       "share": "12.3K",
-      "badge": "R.drawable.cook",
+      "type": 1,
+      "badge": "@drawable/ic_resturant",
       "comment_details": {
         "name": "Jaxson Schleifer",
-        "image": "R.drawable.resu",
+        "image": "@drawable/jaxson_schleifer",
         "comment": "Lorem ipsum",
         "like": 2,
         "date": "1h"
       },
       "post_details": {
-        "title": "Jaxson Schleifer",
-        "image": "R.drawable.resu",
-        "sub_title": "Lorem ipsum"
+        "title_post": "Chicken Chester",
+        "image_post": "@drawable/ic_restaurant_icon_tag",
+        "sub_title": "Cafe & Restaurant"
       }
     },
     {
       "name": "Rayna Rosser",
-      "image": "R.drawable.resu",
+      "image": "@drawable/rayna_rosser",
       "date": "2 days ago",
       "title": "Chicken Chester specializes in delicious food featuring fresh ingredients and masterful preparation",
-      "like": "32K",
-      "comment": "597",
-      "share": "12.3K",
+      "like": "400",
+      "comment": "5K",
+      "share": "3K",
+      "type": 2,
       "job": "Verified Buyer",
-      "badge": "R.drawable.official",
+      "badge": "@drawable/ic_official",
+      "image_list_content": [
+        "@drawable/chicken_meal",
+        "@drawable/burger_meal",
+        "@drawable/meat_meal"
+      ],
       "post_details": {
-        "title": "Jaxson Schleifer",
-        "image": "R.drawable.resu",
-        "sub_title": "Lorem ipsum"
+        "title_post": "Chicken MACDO, Carmel Sandae, Fri.. ",
+        "image_post": "@drawable/mcdonalds_logo",
+        "sub_title": "Mcdonald's"
       }
     },
     {
-      "name": "Rayna Rosser",
-      "image": "R.drawable.resu",
-      "date": "2 days ago",
+      "name": "Skylarani Arcand",
+      "image": "@drawable/skylarani_arcand_image",
+      "date": "1 sec ago",
       "title": "Chicken Chester specializes in delicious food featuring fresh ingredients and masterful preparation",
-      "like": "32K",
-      "comment": "597",
-      "share": "12.3K",
-      "job": "Verified Buyer",
+      "like": "4K",
+      "comment": "193",
+      "share": "8K",
+      "type": 3,
       "share_from": "Chicken Chester",
       "post_details": {
-        "name": "Chicken Chester",
-        "image_user": "R.drawable.resu",
-        "badge": "R.drawable.official",
-        "image_content": "R.drawable.resu",
+        "name": "Rayna Rhiel Madsen",
+        "image_user": "@drawable/rayna_rhiel_madsen",
+        "badge": "@drawable/ic_official",
+        "image_content": "@drawable/chicken_chester_meal",
         "date": "2 days ago",
         "post_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros est, blandit eu nunc sit amet",
-        "title": "Jaxson Schleifer",
-        "image": "R.drawable.resu",
-        "sub_title": "Lorem ipsum"
+        "title_post": "Buy 2 Chicken Burger Combo and 2..",
+        "image_post": "@drawable/chicken_chester_image",
+        "sub_title": "Chicken Chester"
       }
     }
   ]

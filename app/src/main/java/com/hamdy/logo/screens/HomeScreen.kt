@@ -2,11 +2,16 @@ package com.hamdy.logo.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
@@ -15,15 +20,25 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.hamdy.logo.R
+import com.hamdy.logo.components.Post
+import com.hamdy.logo.viewmodel.MainViewModel
 
 @Composable
-fun HomeScreen() {
-    Column() {
+fun HomeScreen(mainViewModel: MainViewModel) {
+    Column(modifier = Modifier) {
         UserHeadHome()
+        val listPosts by mainViewModel.listPosts.observeAsState(listOf())
+        LazyColumn {
+            itemsIndexed(listPosts) { _, post ->
+                Divider(
+                    color = colorResource(id = R.color.divider),
+                    thickness = 5.dp
+                )
+                Post(post!!)
+            }
+        }
     }
-
 }
-
 
 @Composable
 fun UserHeadHome() {
@@ -57,12 +72,13 @@ fun UserHeadHome() {
 
 }
 
+
 @Composable
-fun CircleImage(id: Int) {
+fun CircleImage(id: Int, modifier: Modifier = Modifier) {
     Image(
         painter = painterResource(id = id),
         contentDescription = stringResource(id = R.string.user_image),
-        modifier = Modifier
+        modifier = modifier
             .size(40.dp)
             .clip(CircleShape)
     )
@@ -73,6 +89,7 @@ fun CircleImage(id: Int) {
 fun PreviewCircleImage() {
     CircleImage(id = R.drawable.user_image)
 }
+
 @Preview
 @Composable
 fun PreviewUserHeadHome() {

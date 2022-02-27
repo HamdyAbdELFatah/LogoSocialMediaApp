@@ -4,14 +4,14 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import com.hamdy.logo.screens.*
+import com.hamdy.logo.viewmodel.MainViewModel
 
 @Composable
-fun NavigationGraph(navController: NavHostController) {
-    NavHost(navController = navController, startDestination = BottomNavItem.HomeScreen.routes) {
+fun NavigationGraph(navController: NavHostController,viewModel: MainViewModel) {
+    NavHost(navController = navController, startDestination = BottomNavItem.Splash.routes) {
         composable(BottomNavItem.HomeScreen.routes) {
-            HomeScreen()
+            HomeScreen(viewModel)
         }
         composable(BottomNavItem.RestaurantScreen.routes) {
             RestaurantScreen()
@@ -25,5 +25,7 @@ fun NavigationGraph(navController: NavHostController) {
         composable(BottomNavItem.ProfileScreen.routes) {
             ProfileScreen()
         }
+        composable(route = BottomNavItem.Splash.routes) { SplashScreen(navController) }
+
     }
 }

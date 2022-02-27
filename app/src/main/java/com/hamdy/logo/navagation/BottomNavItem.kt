@@ -12,4 +12,6 @@ sealed class BottomNavItem(var icon: Int, val routes: String) {
     object PercentScreen : BottomNavItem(ResDrawable.ic_percent, "percent_screen")
     object GroupScreen : BottomNavItem(ResDrawable.ic_group, "group_screen")
     object ProfileScreen : BottomNavItem(ResDrawable.ic_profile, "Profile_screen")
+    object Splash : BottomNavItem(ResDrawable.ic_profile, "splash_screen")
+    object MainScreen : BottomNavItem(ResDrawable.ic_profile, "main_screen")
 }
